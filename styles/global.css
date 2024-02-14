@@ -1,0 +1,10 @@
+.underline {
+    text-decoration: underline;
+}
+
+.home_padding {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
