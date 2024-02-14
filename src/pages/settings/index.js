@@ -24,22 +24,11 @@ export default function Settings() {
                         </div>}
                     </p>
                 </Backdrop_content>
-<<<<<<< HEAD:src/pages/settings.js
-<<<<<<< Updated upstream:src/pages/settings.js
-=======
 
                 <Backdrop_content header="My admin account" style={{ maxWidth: 600 }}>
                     <Rows_backdrop_row1 icon="/icons/security_hazard.svg" header="Two-factor authentication" href="/settings/me/two-factor"/>
                     <Rows_backdrop_row1 icon="/icons/key.svg" header="My Logins" href="/settings/me/my-logins"/>
                 </Backdrop_content>
->>>>>>> Stashed changes:src/pages/settings/index.js
-=======
-
-                <Backdrop_content header="My admin account" style={{ maxWidth: 600 }}>
-                    <Rows_backdrop_row1 icon="/icons/security_hazard.svg" header="Two-factor authentication" href="/settings/customization"/>
-                    <Rows_backdrop_row1 icon="/icons/key.svg" header="My Logins" href="/settings/my-logins"/>
-                </Backdrop_content>
->>>>>>> 27a047a29b84aaa9f6f8e7fa70c0cb8dd4b9eb8d:src/pages/settings/index.js
             </Home1>
         </div>
     )
