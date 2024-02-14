@@ -7,7 +7,6 @@ export default function Table1(props) {
     }
 
     const ColumnItem = ((props) => {
-        console.log(props.content);
         return (
             <div className='table1_column_item'>
                 <p className='table1_column_item_text'>{props.content}</p>
