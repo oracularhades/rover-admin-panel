@@ -13,6 +13,7 @@ export default function AestheticMetadataPanel(props) {
     return (
         <div style={{ backgroundImage: `url(${link})` }} className='aesthetic_metadata_panel_left'>
             <div className='aesthetic_metadata_panel_left_div'>
+                {!process.env.NEXT_PUBLIC_logo && process.env.NEXT_PUBLIC_alias && <h1>{process.env.NEXT_PUBLIC_alias}</h1>}
                 {process.env.NEXT_PUBLIC_logo && <img className='aesthetic_metadata_panel_left_logo' src={process.env.NEXT_PUBLIC_logo}/>}
                 {process.env.NEXT_PUBLIC_dashboard_name && <h2 className='aesthetic_metadata_panel_left_header'>{process.env.NEXT_PUBLIC_dashboard_name}</h2>}
                 <p>We need to verify your identity, please login.</p>

@@ -9,14 +9,14 @@ export default function Settings() {
 
     return (
         <div className="frame_div">
-            <Home1>
-                <Backdrop_content style={{ maxWidth: 600 }}>
-                    <Rows_backdrop_row1 icon="/icons/palette.svg" header="Customization" href="/settings/customize"/>
+            <Home1 className="home_padding settings">
+                <Backdrop_content header="Rover settings" style={{ maxWidth: 600 }}>
+                    <Rows_backdrop_row1 icon="/icons/palette.svg" header="Customization" href="/settings/customization"/>
                     <Rows_backdrop_row1 icon="/icons/meshing.svg" header="Meshing" href="/settings/meshing"/>
-                    <Rows_backdrop_row1 icon="/icons/post_box.svg" header="SMTP connection (notifications)" href="/settings/meshing"/>
-                    <Rows_backdrop_row1 icon="/icons/database.svg" header="SQL Connection" href="/settings/backup-and-restore"/>
-                    <Rows_backdrop_row1 icon="/icons/backup.svg" header="Backup & Restore" href="/settings/backup-and-restore"/>
-                    <p className="rover_version greyText">Versions: {show_full_version != true && <a className='underline' onClick={() => { set_show_full_version(true) }}>Show</a>}
+                    <Rows_backdrop_row1 icon="/icons/post_box.svg" header="SMTP connection (notifications)" href="/settings/smtp"/>
+                    <Rows_backdrop_row1 icon="/icons/database.svg" header="SQL connection" href="/settings/sql"/>
+                    <Rows_backdrop_row1 icon="/icons/backup.svg" header="Backup & restore" href="/settings/backup-or-restore"/>
+                    <p className="rover_version greyText">Rover versions: {show_full_version != true && <a className='underline' onClick={() => { set_show_full_version(true) }}>Show</a>}
                         {show_full_version == true && <div>
                             Rover admin panel: (Canary) 0.0.1
                             <br/>
@@ -24,6 +24,7 @@ export default function Settings() {
                         </div>}
                     </p>
                 </Backdrop_content>
+<<<<<<< HEAD:src/pages/settings.js
 <<<<<<< Updated upstream:src/pages/settings.js
 =======
 
@@ -32,6 +33,13 @@ export default function Settings() {
                     <Rows_backdrop_row1 icon="/icons/key.svg" header="My Logins" href="/settings/me/my-logins"/>
                 </Backdrop_content>
 >>>>>>> Stashed changes:src/pages/settings/index.js
+=======
+
+                <Backdrop_content header="My admin account" style={{ maxWidth: 600 }}>
+                    <Rows_backdrop_row1 icon="/icons/security_hazard.svg" header="Two-factor authentication" href="/settings/customization"/>
+                    <Rows_backdrop_row1 icon="/icons/key.svg" header="My Logins" href="/settings/my-logins"/>
+                </Backdrop_content>
+>>>>>>> 27a047a29b84aaa9f6f8e7fa70c0cb8dd4b9eb8d:src/pages/settings/index.js
             </Home1>
         </div>
     )

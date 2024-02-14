@@ -5,7 +5,7 @@ import "./../../../styles/global.css";
 export default function Devices() {
     return (
         <div className="frame_div">
-            <Home1 className="home_padding">
+            <Home1 className="home_padding align_items_center">
                 <Device_Component/>
             </Home1>
         </div>
