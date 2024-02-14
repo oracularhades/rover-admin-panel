@@ -21,11 +21,7 @@
     background-blend-mode: overlay;
 }
 
-.aesthetic_metadata_panel_left h2 {
-    color: white;
-}
-
-.aesthetic_metadata_panel_left p {
+.aesthetic_metadata_panel_left * {
     color: white;
 }
 

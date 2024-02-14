@@ -1,20 +1,19 @@
 import { credentials_object, read_image_from_file_insert_into_element } from "@/global";
 import "./css/selector1.css";
 import { useRef, useState } from "react";
-import { Clubs } from "clubs";
 
 export default function Selector1(props) {
   const [random, set_random] = useState(Math.random()+Math.random());
   const image_data = useRef(null);
 
   async function upload_image() {
-    const image_upload = await Clubs(await credentials_object()).image().upload_media(image_data.current, props.type);
-    if (image_upload[0].error == true) {
-      alert(image_data.message);
-      return;
-    }
+    // const image_upload = await Clubs(await credentials_object()).image().upload_media(image_data.current, props.type);
+    // if (image_upload[0].error == true) {
+    //   alert(image_data.message);
+    //   return;
+    // }
 
-    props.onImageId(image_upload[0].id);
+    // props.onImageId(image_upload[0].id);
   }
 
   return (
