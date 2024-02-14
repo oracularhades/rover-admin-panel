@@ -14,15 +14,14 @@ export default function Login1() {
       <FormStyle_1>
         <div className='FormStyle_1_div'>
           <Input_with_header header="Email" placeholder={`name@${process.env.NEXT_PUBLIC_email_placeholder_domain}`}></Input_with_header>
-          <Input_with_header header="Password" placeholder="••••••••••••••••" type="password"></Input_with_header>
           <button className='FormStyle_1_div_login_button'>Login</button>
         </div>
 
         <Or_Bar/>
 
         <div className='FormStyle_1_div'>
-          <Login_With service="Microsoft" icon="https://www.microsoft.com/favicon.ico?v2" redirect="https://example.com"/>
-          <Login_With service="Github" icon="https://github.com/favicon.ico" redirect=""/>
+          <Login_With disabled={true} service="Microsoft" icon="https://www.microsoft.com/favicon.ico?v2" redirect="https://example.com"/>
+          {/* <Login_With service="Github" icon="https://github.com/favicon.ico" redirect=""/> */}
         </div>
       </FormStyle_1>
     </Frame_AestheticMetadataPanel>

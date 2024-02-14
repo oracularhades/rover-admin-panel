@@ -9,7 +9,7 @@ export default function Table1(props) {
     const ColumnItem = ((props) => {
         return (
             <div className='table1_column_item'>
-                <p className='table1_column_item_text'>{props.content}</p>
+                {props.content}
             </div>
         )
     });
