@@ -1,12 +1,14 @@
-import Link from 'next/link';
 import './css/device_component.css';
+import { useRouter } from 'next/router';
 
 export default function Device_Component(props) {
+    const router = useRouter();
+
     const Right_Button = ((props) => {
         return (
-            <Link href={props.href}><button className='right_button'>
+            <button onClick={() => { router.push(props.href); }} className='right_button'>
                 <img src={props.icon}/>
-            </button></Link>
+            </button>
         )
     });
 
