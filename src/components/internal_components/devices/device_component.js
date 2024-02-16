@@ -1,11 +1,12 @@
+import Link from 'next/link';
 import './css/device_component.css';
 
 export default function Device_Component(props) {
     const Right_Button = ((props) => {
         return (
-            <button className='right_button'>
+            <Link href={props.href}><button className='right_button'>
                 <img src={props.icon}/>
-            </button>
+            </button></Link>
         )
     });
 
@@ -20,8 +21,8 @@ export default function Device_Component(props) {
             </button>
 
             {props.hide_right_buttons != true && <div className='device_component_right'>
-                <Right_Button icon="/icons/device_logs.svg"/>
-                <Right_Button icon="/icons/pencil_border.svg"/>
+                <Right_Button href="/device/placeholder" icon="/icons/device_logs.svg"/>
+                <Right_Button href="/device/placeholder" icon="/icons/pencil_border.svg"/>
                 <Right_Button icon="/icons/trash.svg"/>
             </div>}
         </div>
